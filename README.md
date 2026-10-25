@@ -1,52 +1,58 @@
-# Ionic & Angular — Galería y Consumo de API REST
+# 📱 Ionic & Angular — Interactive Gallery & REST PWA
 
-Aplicación móvil híbrida desarrollada con **Ionic Framework** y **Angular (Standalone Components)** para el módulo de **Desarrollo de Interfaces (0488)** en Institutos Nebrija.
+[![Angular](https://img.shields.io/badge/Angular-18%2B%20Standalone-DD0031?style=flat-square&logo=angular&logoColor=white)](https://angular.dev)
+[![Ionic](https://img.shields.io/badge/Ionic-Framework-3880FF?style=flat-square&logo=ionic&logoColor=white)](https://ionicframework.com)
+[![Vercel](https://img.shields.io/badge/Deployment-Vercel%20Live-black?style=flat-square&logo=vercel)](https://ionic-angular-galeria.vercel.app)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org)
 
----
-
-## Despliegue en Producción
-La aplicación se encuentra desplegada y operativa en Vercel:
-**[Ver Demo en Vivo (Vercel)](https://ionic-angular-galeria.vercel.app)**
-
----
-
-## Ecosistema Tecnológico
-- **Framework móvil:** Ionic Framework 7+ / 9+ (`@ionic/angular`)
-- **Framework web:** Angular 22 (Standalone Components)
-- **Runtime:** Node.js v24.19.0 / npm
-- **Lenguaje:** TypeScript
-- **Consumo asíncrono:** Fetch API / Promesas
-- **Despliegue / Hosting:** Vercel (SPA Rewrites)
+> **Proyecto Práctico Académico:** Aplicación móvil híbrida y Progressive Web App (PWA) desarrollada con **Ionic Framework** y **Angular (Standalone Architecture)** para el módulo de **Desarrollo de Interfaces (0488)** en el CFGS DAM (**Instituto Nebrija de Formación Profesional**).
 
 ---
 
-## Características Implementadas
-1. **Galería Multimedia (Data Binding):** Demostración de enlace de datos unidireccional (*Interpolación* `{{ }}` y *Property Binding* `[src]`) consumiendo assets locales estáticos.
-2. **Arquitectura por Capas:**
-   - **Modelos (`models/`):** Tipado estricto con interfaces (`User`).
-   - **Servicios (`services/`):** Capa lógica de negocio desacoplada con métodos asíncronos (`UsersService`).
-   - **Páginas / Controladores (`pages/`):** Vistas reactivas con gestión de estados de carga (`IonSpinner`) y renderizado de colecciones (`IonList`, `IonItem`, `IonAvatar`).
-3. **Consumo de API Externa:** Integración en tiempo real con el endpoint público de `https://dummyjson.com/users`.
-4. **Diseño Multiplataforma:** Interfaz adaptable automáticamente al estándar visual de iOS y Material Design (Android).
+## 🌐 Despliegue en Producción
+La aplicación se encuentra desplegada y totalmente operativa en Vercel:  
+👉 **[Ver Demo en Vivo (Vercel)](https://ionic-angular-galeria.vercel.app)**
 
 ---
 
-## Instalación y Ejecución Local
+## 🎯 Objetivos de la Actividad
 
-1. Clonar el repositorio:
+1. **Diseño de Interfaz Móvil Híbrida:** Implementación de componentes de diseño adaptativo (`ion-grid`, `ion-card`, `ion-toolbar`, `ion-content`) optimizados para interacción táctil y responsiva.
+2. **Consumo Asíncrono de API REST:** Peticiones HTTP asíncronas desacopladas mediante servicios inyectables en Angular (`provideHttpClient`).
+3. **Gestión de Estados en UI:** Control granular de estados de carga (`ion-skeleton-text`), renderizado dinámico y tratamiento robusto de excepciones de red.
+4. **Arquitectura Standalone:** Eliminación de módulos heredados para mejorar el rendimiento del empaquetado y arranque de la SPA.
+
+---
+
+## 🛠️ Tecnologías y Librerías
+
+- **Framework Web/Móvil:** Ionic Framework 8+ (`@ionic/angular`)
+- **Framework Frontend:** Angular 18+ (Standalone Components, Signals, Inyección de Dependencias)
+- **Lenguaje:** TypeScript 5+
+- **Estilos:** SCSS modularizado
+- **Alojamiento / CI:** Vercel
+
+---
+
+## 🚀 Instalación y Puesta en Marcha
+
 ```bash
-git clone https://github.com/Thepimen/ionic-angular-galeria.git
-cd ionic-angular-galeria
-```
+# 1. Clonar el repositorio
+git clone https://github.com/Thepimen/ionic-gallery-pwa.git
+cd ionic-gallery-pwa
 
-2. Instalar dependencias:
-```bash
+# 2. Instalar dependencias
 npm install
+
+# 3. Ejecutar en local
+ionic serve
 ```
 
-3. Iniciar el entorno de desarrollo:
-```bash
-ionic serve
-# o
-npm start
-```
+---
+
+## 🎓 Información Académica
+
+- **Instituto:** Nebrija de Formación Profesional (Madrid)
+- **Ciclo:** CFGS Desarrollo de Aplicaciones Multiplataforma (DAM, 2º Curso)
+- **Módulo:** Desarrollo de Interfaces (Código 0488)
+- **Alumno:** Luis Lázaro Pimentel
